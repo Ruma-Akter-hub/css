@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		 p{
+			height: 100px;
+			width: 250px;
+			background-color: pink;
+			border: 1px solid red;
+			overflow: scroll;
+		}
+
+		.tooltip{
+			position: relative;
+			background-color: #26C1F4;
+			text-decoration: none;
+			font-size: 30px;
+			border: 2px solid black;
+			padding: 5px;
+			margin: 10px 5px;
+		}
+
+		.tooltip:hover .tooltip-text{
+			visibility: visible;
+		}
+
+		.tooltip .tooltip-text{
+			visibility: hidden;
+			text-decoration: none;
+			width: 150px;
+			background-color: red;
+			color: black;
+			padding: 10px;
+			border-radius: 5px;
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			z-index: 1;
+			font-size: 18px; 
+		}
+
+
+	</style>
+</head>
+<body>
+	<a href="#" class="tooltip">
+	Facebook
+	<span class="tooltip-text">Facebook is a social media</span>
+	</a>
+	<br>
+	<br>
+	<br>
+	<div>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Vero voluptatibus magnam fugiat error, facilis, obcaecati culpa aspernatur corrupti ex, at cum similique fugit. Nesciunt praesentium molestiae, fugit iste reprehenderit repellendus velit distinctio temporibus cum neque, vero sint. Sit sunt quia sequi, repellat quis vitae dicta soluta commodi vero eligendi numquam.</p>
+	</div>
+</body>
+</html>
